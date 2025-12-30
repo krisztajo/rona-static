@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       {/* Contact Bar */}
-      <div className="bg-rona-700 text-white py-2">
+      <div className="bg-rona-700 text-white py-3">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center sm:justify-between items-center gap-2 text-sm">
             <div className="flex items-center gap-4">
@@ -57,15 +57,15 @@ export default function Header() {
 
       {/* Main Navigation */}
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.png"
               alt="RónaRendelő - ...tudjuk, szeretjük!"
-              width={90}
-              height={80}
-              className="h-14 w-auto"
+              width={120}
+              height={100}
+              className="h-20 w-auto"
               priority
             />
           </Link>

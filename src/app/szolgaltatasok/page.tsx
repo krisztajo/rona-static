@@ -5,9 +5,7 @@ import { serviceCategories } from "@/data/services";
 import { contactInfo } from "@/data/contact";
 
 export default function SzolgaltatasokPage() {
-  const [openCategory, setOpenCategory] = useState<string | null>(
-    serviceCategories[0]?.id || null
-  );
+  const [openCategory, setOpenCategory] = useState<string | null>(null);
 
   const toggleCategory = (categoryId: string) => {
     setOpenCategory(openCategory === categoryId ? null : categoryId);

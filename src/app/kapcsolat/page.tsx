@@ -181,7 +181,7 @@ export default function KapcsolatPage() {
                 Rendelési idők
               </h2>
               <div className="space-y-4">
-                {doctors.slice(0, 6).map((doctor) => (
+                {doctors.map((doctor) => (
                   <div key={doctor.id} className="flex justify-between items-start py-2 border-b border-gray-100 last:border-0">
                     <div>
                       <p className="font-medium text-gray-900">{doctor.name}</p>
@@ -193,13 +193,6 @@ export default function KapcsolatPage() {
                   </div>
                 ))}
               </div>
-              <p className="mt-4 text-sm text-gray-500 text-center">
-                A teljes listáért látogassa meg az{" "}
-                <a href="/orvosaink" className="text-rona-600 hover:text-rona-700 transition-colors">
-                  Orvosaink
-                </a>{" "}
-                oldalt.
-              </p>
             </div>
           </div>
         </div>
