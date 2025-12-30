@@ -8,8 +8,8 @@ interface DoctorCardProps {
 
 export default function DoctorCard({ doctor }: DoctorCardProps) {
   return (
-    <Link href={`/orvosaink/${doctor.id}`} className="group">
-      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-5">
+    <Link href={`/orvosaink/${doctor.id}`} className="group h-full">
+      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-5 h-full flex flex-col">
         <div className="flex items-start gap-4">
           {/* Small oval photo */}
           <div className="flex-shrink-0">
@@ -60,7 +60,7 @@ export default function DoctorCard({ doctor }: DoctorCardProps) {
         </div>
 
         {/* Short bio */}
-        <p className="text-gray-600 text-sm line-clamp-2 mt-3">{doctor.shortBio}</p>
+        <p className="text-gray-600 text-sm line-clamp-2 mt-3 flex-grow">{doctor.shortBio}</p>
 
         {/* CTA */}
         <div className="mt-3 flex items-center text-rona-600 font-medium text-sm group-hover:text-rona-700">

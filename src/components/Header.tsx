@@ -71,12 +71,12 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-rona-600 font-medium transition-colors"
+                className="text-gray-700 hover:text-rona-600 font-medium text-lg transition-colors"
               >
                 {item.name}
               </Link>
