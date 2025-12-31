@@ -97,7 +97,7 @@ export default function SzolgaltatasokPage() {
         {/* Contact CTA */}
         <div className="mt-12 bg-rona-50 rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Kérdése van az árakkal kapcsolatban?
+            Kérdése van?
           </h2>
           <p className="text-gray-600 mb-6 max-w-xl mx-auto">
             Hívjon minket, és kollégáink készséggel válaszolnak kérdéseire!
