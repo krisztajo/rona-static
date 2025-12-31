@@ -34,6 +34,11 @@ export default function Footer() {
                   Orvosaink
                 </Link>
               </li>
+                <li>
+                  <Link href="/rolunk" className="hover:text-rona-400 transition-colors">
+                    Rólunk
+                  </Link>
+                </li>
               <li>
                 <Link href="/szolgaltatasok" className="hover:text-rona-400 transition-colors">
                   Árak & Szolgáltatások
