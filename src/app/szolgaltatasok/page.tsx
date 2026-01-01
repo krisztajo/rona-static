@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { serviceCategories } from "@/data/services";
 import { contactInfo } from "@/data/contact";
+import { ServiceIcon } from "@/components/icons/ServiceIcons";
 
 export default function SzolgaltatasokPage() {
   const [openCategory, setOpenCategory] = useState<string | null>(null);
@@ -38,7 +39,7 @@ export default function SzolgaltatasokPage() {
                 className="w-full px-6 py-4 flex items-center justify-between bg-gradient-to-r from-rona-600 to-rona-700 text-white hover:from-rona-700 hover:to-rona-800 transition-all"
               >
                 <span className="flex items-center gap-3 text-lg font-semibold">
-                  <span className="text-2xl">{category.icon}</span>
+                  <ServiceIcon serviceId={category.id} size={28} className="flex-shrink-0" />
                   {category.name}
                 </span>
                 <svg

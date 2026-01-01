@@ -2,6 +2,14 @@ import Link from "next/link";
 import { doctors } from "@/data/doctors";
 import { contactInfo } from "@/data/contact";
 import DoctorCard from "@/components/DoctorCard";
+import {
+  DermatologyIcon,
+  OrthopedicsIcon,
+  TraumatologyIcon,
+  UrologyIcon,
+  SurgeryIcon,
+  UltrasoundIcon,
+} from "@/components/icons/ServiceIcons";
 
 export default function Home() {
   // Show first 4 doctors on homepage
@@ -131,19 +139,19 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: "Bőrgyógyászat", icon: "🔬", desc: "Anyajegyszűrés, bőrbetegségek, kozmetológia" },
-              { name: "Ortopédia", icon: "🦴", desc: "Mozgásszervi betegségek, sportsérülések" },
-              { name: "Traumatológia", icon: "🩹", desc: "Baleseti sebészet, töréskezelés" },
-              { name: "Urológia", icon: "🩺", desc: "Urológiai vizsgálatok és kezelések" },
-              { name: "Sebészet", icon: "⚕️", desc: "Általános és onkosebészet" },
-              { name: "UH Diagnosztika", icon: "📡", desc: "Ultrahang vizsgálatok" },
+              { name: "Bőrgyógyászat", icon: DermatologyIcon, desc: "Anyajegyszűrés, bőrbetegségek, kozmetológia" },
+              { name: "Ortopédia", icon: OrthopedicsIcon, desc: "Mozgásszervi betegségek, sportsérülések" },
+              { name: "Traumatológia", icon: TraumatologyIcon, desc: "Baleseti sebészet, töréskezelés" },
+              { name: "Urológia", icon: UrologyIcon, desc: "Urológiai vizsgálatok és kezelések" },
+              { name: "Sebészet", icon: SurgeryIcon, desc: "Általános és onkosebészet" },
+              { name: "UH Diagnosztika", icon: UltrasoundIcon, desc: "Ultrahang vizsgálatok" },
             ].map((specialty) => (
               <Link
                 key={specialty.name}
                 href="/szolgaltatasok"
                 className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group"
               >
-                <span className="text-4xl mb-4 block">{specialty.icon}</span>
+                <specialty.icon size={40} className="text-rona-600 mb-4" />
                 <h3 className="font-semibold text-lg text-gray-900 group-hover:text-rona-600 transition-colors mb-2">
                   {specialty.name}
                 </h3>
