@@ -36,7 +36,7 @@ export default function SzolgaltatasokPage() {
               {/* Accordion Header */}
               <button
                 onClick={() => toggleCategory(category.id)}
-                className="w-full px-6 py-4 flex items-center justify-between bg-gradient-to-r from-rona-600 to-rona-700 text-white hover:from-rona-700 hover:to-rona-800 transition-all"
+                className="w-full px-6 py-4 flex items-center justify-between bg-rona-600 text-white hover:bg-rona-700 transition-all group"
               >
                 <span className="flex items-center gap-3 text-lg font-semibold">
                   <ServiceIcon serviceId={category.id} size={28} className="flex-shrink-0" />

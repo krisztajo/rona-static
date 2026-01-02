@@ -18,22 +18,22 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-rona-700 via-rona-600 to-rona-800 text-white">
-        <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-10"></div>
+      <section className="relative bg-rona-50 text-gray-900">
+        <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-5"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
               Szakorvosi ellátás<br />
-              <span className="text-rona-200">nyugodt körülmények között</span>
+              <span className="text-rona-500">nyugodt körülmények között</span>
             </h1>
-            <p className="text-xl text-rona-100 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
               A RónaRendelő-ben elismert szakorvosok várják Önt kiszámítható időponttal, 
               személyre szabott törődéssel, a legmagasabb szakmai színvonalon.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/orvosaink"
-                className="inline-flex items-center gap-2 bg-white text-rona-700 px-6 py-3 rounded-lg font-semibold hover:bg-rona-50 transition-colors shadow-lg"
+                className="inline-flex items-center gap-2 bg-rona-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-rona-700 transition-colors shadow-lg"
               >
                 Orvosaink
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -42,7 +42,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/szolgaltatasok"
-                className="inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-rona-700 transition-colors"
+                className="inline-flex items-center gap-2 border-2 border-rona-600 text-rona-700 px-6 py-3 rounded-lg font-semibold hover:bg-rona-600 hover:text-white transition-colors"
               >
                 Szolgáltatások
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -149,9 +149,11 @@ export default function Home() {
               <Link
                 key={specialty.name}
                 href="/szolgaltatasok"
-                className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group"
+                className="bg-white p-6 rounded-xl shadow-sm border-2 border-transparent hover:border-rona-400 hover:shadow-lg transition-all duration-200 group"
               >
-                <specialty.icon size={40} className="text-rona-600 mb-4" />
+                <div className="transition-transform duration-200 group-hover:scale-110 inline-block">
+                  <specialty.icon size={40} className="text-rona-500 group-hover:text-rona-600 transition-colors mb-4" />
+                </div>
                 <h3 className="font-semibold text-lg text-gray-900 group-hover:text-rona-600 transition-colors mb-2">
                   {specialty.name}
                 </h3>

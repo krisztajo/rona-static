@@ -3,17 +3,24 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  /* RónaRendelő egyedi türkiz színek - a logó alapján */
-  --rona-50: #e6f7f7;
-  --rona-100: #b3e6e6;
-  --rona-200: #80d4d4;
-  --rona-300: #4dc2c2;
-  --rona-400: #26b3b3;
-  --rona-500: #009999;
-  --rona-600: #008a8a;
-  --rona-700: #007a7a;
-  --rona-800: #006666;
-  --rona-900: #004d4d;
+  /* RónaRendelő színek - #80afa9 alapján */
+  --rona-50: #f2f7f6;
+  --rona-100: #e0edeb;
+  --rona-200: #c5ddd9;
+  --rona-300: #a3cac5;
+  --rona-400: #80afa9; /* fő szín - logó */
+  --rona-500: #5d9590;
+  --rona-600: #4a7b77;
+  --rona-700: #3d6662;
+  --rona-800: #34544f;
+  --rona-900: #2a4340;
+  /* Színátmenetes akcentusok */
+  --rona-light: #e0f2f0;
+  --rona-accent: #9cd4ce;
+  --rona-accent2: #7ec9c1;
+  --rona-gradient: linear-gradient(135deg, #80afa9 0%, #9cd4ce 50%, #b8e5df 100%);
+  --rona-gradient-light: linear-gradient(135deg, #e8f4f3 0%, #d0e8e6 50%, #b8dcd8 100%);
+  --rona-gradient-btn: linear-gradient(135deg, #80afa9 0%, #6a9e98 100%);
 }
 
 @theme inline {

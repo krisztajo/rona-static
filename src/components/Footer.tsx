@@ -3,18 +3,18 @@ import { contactInfo } from "@/data/contact";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-rona-50 text-rona-900 border-t border-rona-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo & Description */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-rona-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">R</span>
+              <div className="w-10 h-10 bg-rona-200 rounded-lg flex items-center justify-center">
+                <span className="text-rona-700 font-bold text-xl">R</span>
               </div>
-              <span className="text-xl font-bold">RónaRendelő</span>
+              <span className="text-xl font-bold text-rona-800">RónaRendelő</span>
             </div>
-            <p className="text-gray-400 text-sm">
+            <p className="text-rona-700 text-sm">
               Szakorvosi magánrendelő Budapest XIV. kerületében. 
               Elismert szakorvosok, nyugodt környezet, kiszámítható időpontok.
             </p>
@@ -22,30 +22,30 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Gyors linkek</h3>
-            <ul className="space-y-2 text-gray-400">
+            <h3 className="font-semibold text-lg mb-4 text-rona-800">Gyors linkek</h3>
+            <ul className="space-y-2 text-rona-700">
               <li>
-                <Link href="/" className="hover:text-rona-400 transition-colors">
+                <Link href="/" className="hover:text-rona-500 transition-colors">
                   Főoldal
                 </Link>
               </li>
               <li>
-                <Link href="/orvosaink" className="hover:text-rona-400 transition-colors">
+                <Link href="/orvosaink" className="hover:text-rona-500 transition-colors">
                   Orvosaink
                 </Link>
               </li>
                 <li>
-                  <Link href="/rolunk" className="hover:text-rona-400 transition-colors">
+                  <Link href="/rolunk" className="hover:text-rona-500 transition-colors">
                     Rólunk
                   </Link>
                 </li>
               <li>
-                <Link href="/szolgaltatasok" className="hover:text-rona-400 transition-colors">
+                <Link href="/szolgaltatasok" className="hover:text-rona-500 transition-colors">
                   Árak & Szolgáltatások
                 </Link>
               </li>
               <li>
-                <Link href="/kapcsolat" className="hover:text-rona-400 transition-colors">
+                <Link href="/kapcsolat" className="hover:text-rona-500 transition-colors">
                   Kapcsolat
                 </Link>
               </li>
@@ -54,8 +54,8 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Kapcsolat</h3>
-            <ul className="space-y-3 text-gray-400">
+            <h3 className="font-semibold text-lg mb-4 text-rona-800">Kapcsolat</h3>
+            <ul className="space-y-3 text-rona-700">
               <li className="flex items-start gap-2">
                 <svg className="w-5 h-5 text-rona-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -94,7 +94,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+        <div className="border-t border-rona-200 mt-8 pt-8 text-center text-rona-600 text-sm">
           <p>&copy; {new Date().getFullYear()} RónaRendelő. Minden jog fenntartva.</p>
         </div>
       </div>
